@@ -44,7 +44,7 @@
 				if (a == 0) {
 					a = 1;
 					//此处改成你要跳转的地址
-					top.location.href = 'https://www.csdn.com'
+					top.location.href = 'https://tu.eebk.com/item/649c26f91ddac507cc48496c.jpg'
 				}
 			}, 200)
 		}
