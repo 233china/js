@@ -1,0 +1,48 @@
+a {text-decoration: none;}
+div.usercm {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #333; /* 调整为暗色背景 */
+    font-size: 14px !important; /* 增加字体大小 */
+    width: 160px; /* 调整宽度 */
+    padding: 10px 0; /* 增加上下填充 */
+    -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    box-shadow: 0px 0px 15px #000; /* 调整为暗色阴影 */
+    position: absolute;
+    display: none;
+    z-index: 10000;
+    opacity: 0.9;
+    border-radius: 8px;
+}
+div.usercm ul {
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+div.usercm ul li {
+    margin: 0px;
+    padding: 0px;
+    line-height: 40px; /* 增加行高 */
+}
+div.usercm ul li a {
+    color: #ccc; /* 调整为浅色文字 */
+    padding: 0 15px; /* 调整左右填充 */
+    display: block;
+}
+div.usercm ul li a:hover {
+    color: #fff;
+    background: #222; /* 鼠标悬停时背景颜色调整为比背景更暗的黑色 */
+}
+div.usercm ul li a i {
+    margin-right: 10px;
+}
+a.disabled {
+    color: #c8c8c8 !important;
+    cursor: not-allowed;
+}
+a.disabled:hover {
+    background-color: rgba(255, 11, 11, 0) !important;
+}
