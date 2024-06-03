@@ -46,3 +46,27 @@ a.disabled {
 a.disabled:hover {
     background-color: rgba(255, 11, 11, 0) !important;
 }
+div.usercm {
+    background: #333 !important; /* 调整为暗色背景 */
+}
+div.usercm hr {
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 10px 0 5px 0; /* 调整分隔线的上下间距 */
+}
+div.usercm .blog-info {
+    padding: 5px 15px; /* 调整填充 */
+    color: #ccc;
+    font-size: 12px;
+    line-height: 1.5; /* 增加行距 */
+}
+div.usercm .blog-info p {
+    margin: 5px 0;
+}
+div.usercm .blog-info a {
+    color: #ccc;
+    text-decoration: underline;
+}
+div.usercm .blog-info a:hover {
+    color: #fff;
+}
