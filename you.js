@@ -55,7 +55,7 @@ $(function() {
     var mobileAgents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
     var isMobile = false;
     for (var i = 0; i < mobileAgents.length; i++) {
-        if (userAgent.indexOf(mobileAgents[i]) &gt; 0) {
+        if (userAgent.indexOf(mobileAgents[i]) >= 0) {
             isMobile = true;
             break;
         }
