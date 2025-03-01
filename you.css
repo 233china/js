@@ -70,3 +70,7 @@ div.usercm .blog-info a {
 div.usercm .blog-info a:hover {
     color: #fff;
 }
+/* 移动端隐藏 */
+@media (pointer: coarse) {
+    div.usercm { display: none !important; }
+}
