@@ -1,0 +1,54 @@
+        /* 整合优化后的CSS */
+        .usercm {
+            position: fixed;
+            background: #333;
+            width: 160px;
+            padding: 10px 0;
+            box-shadow: 0px 0px 15px #000;
+            border-radius: 8px;
+            display: none;
+            z-index: 10000;
+            opacity: 0.9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        .usercm ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .usercm li {
+            line-height: 40px;
+            margin: 0;
+        }
+        .usercm a {
+            color: #ccc;
+            padding: 0 15px;
+            display: block;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .usercm a:hover {
+            background: #222;
+            color: #fff;
+        }
+        .usercm hr {
+            border-top: 1px solid #444;
+            margin: 10px 0;
+        }
+        .blog-info {
+            padding: 5px 15px;
+            color: #ccc;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        .disabled {
+            color: #888 !important;
+            cursor: not-allowed;
+        }
+        
+        /* 移动端隐藏 */
+        @media (max-width: 768px) {
+            .usercm {
+                display: none !important;
+            }
+        }
