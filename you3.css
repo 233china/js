@@ -77,3 +77,5 @@ div.usercm .blog-info a:hover {
         display: none !important;
     }
 }
+.usercm {
+    position: fixed;
