@@ -1,4 +1,3 @@
-
 // 改进后的jQuery扩展
 (function($) {
     $.extend({
@@ -7,27 +6,30 @@
             let windowWidth = 0,
                 windowHeight = 0;
 
-            const adjustPosition = (pageX, pageY) => {
+            const adjustPosition = (clientX, clientY) => { // 改用 clientX/clientY
                 const menuWidth = $menu.outerWidth();
                 const menuHeight = $menu.outerHeight();
                 windowWidth = $(window).width();
                 windowHeight = $(window).height();
 
-                if (pageX + menuWidth >= windowWidth) pageX = windowWidth - menuWidth - 5;
-                if (pageY + menuHeight >= windowHeight) pageY = windowHeight - menuHeight - 5;
+                // 确保菜单在视口内
+                let x = clientX;
+                let y = clientY;
+                if (x + menuWidth >= windowWidth) x = windowWidth - menuWidth - 5;
+                if (y + menuHeight >= windowHeight) y = windowHeight - menuHeight - 5;
                 
-                return { x: pageX, y: pageY };
+                return { x, y };
             };
 
             $(document).on('mousedown', function(event) {
-                // 右键显示
-                if (event.button === 2) {
+                if (event.button === 2) { // 右键
                     event.preventDefault();
-                    const pos = adjustPosition(event.pageX, event.pageY);
-                    $menu.css({ left: pos.x, top: pos.y }).show();
-                }
-                // 左键隐藏
-                else if (!$menu.is(event.target) && $menu.has(event.target).length === 0) {
+                    const pos = adjustPosition(event.clientX, event.clientY); // 传入 client 坐标
+                    $menu.css({ 
+                        left: pos.x + 'px', 
+                        top: pos.y + 'px' 
+                    }).show();
+                } else if (!$menu.is(event.target) && $menu.has(event.target).length === 0) {
                     $menu.hide();
                 }
             });
