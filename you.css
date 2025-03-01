@@ -71,3 +71,9 @@ div.usercm .blog-info a {
 div.usercm .blog-info a:hover {
     color: #fff;
 }
+/* 新增移动端隐藏样式 */
+@media (max-width: 768px) {
+    #customContextMenu {
+        display: none !important;
+    }
+}
