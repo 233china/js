@@ -1,4 +1,4 @@
-<script>
+
 // 改进后的jQuery扩展
 (function($) {
     $.extend({
@@ -68,4 +68,4 @@ $(function() {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-</script>
+
